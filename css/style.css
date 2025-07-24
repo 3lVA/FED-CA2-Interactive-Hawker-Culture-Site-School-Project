@@ -1,0 +1,24 @@
+/* body */
+.background {
+  background-color: #fff3e0;
+  margin: 0px;
+  padding: 0px;
+}
+.displayText {
+  font-family: "dm serif display";
+  text-transform: capitalize;
+}
+
+/* navigation bar */
+.pages {
+  text-transform: capitalize;
+  font-family: "playfair";
+}
+
+.navStyle {
+  background-color: rgb(145, 41, 41);
+}
+
+.navStyle a {
+  color: #fff3e0;
+}
