@@ -10,15 +10,19 @@
 }
 
 /* navigation bar */
-.pages {
-  text-transform: capitalize;
-  font-family: "playfair";
-}
-
 .navStyle {
   background-color: rgb(145, 41, 41);
 }
 
 .navStyle a {
   color: #fff3e0;
+  text-transform: capitalize;
+  font-family: "playfair";
+}
+
+/* overwrite og hover */
+.browseNav:hover {
+  color: rgb(145, 41, 41);
+  background-color: #fff3e0;
+  padding:10px;
 }
