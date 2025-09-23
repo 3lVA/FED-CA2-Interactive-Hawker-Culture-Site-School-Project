@@ -3,31 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Informational Page</title>
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- css external stylesheet -->
+    <title>About Hawker Culture</title>
+    <!-- external css -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Method One-->
-    <!--Bootstrap CSS-->
-    <link
-      rel="stylesheet"
-      href="bootstrap-5.3.7-dist (1)/bootstrap-5.3.7-dist/css/bootstrap.min.css"
-    />
-    <script src="bootstrap-5.3.7-dist (1)/bootstrap-5.3.7-dist/js/bootstrap.min.js"></script>
-
-    <!--Method Two-->
+    <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -39,17 +18,25 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-
     <!-- JQuery to support Bootstrap Functions -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <!-- external js -->
+    <script type="text/javascript" src="js/script.js"></script>
   </head>
-  <body class="background">
-    <!-- Share relevant content, future developments, or interesting insights related to
-the theme. Use a multi-column layout to organize your data attractively -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid navStyle">
-        <a class="navbar-brand displayText websiteName">flavours of our streets</a>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-bar">
+      <div class="container-fluid">
+        <a class="navbar-brand"
+          ><img
+            src="images/website-logo.png"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Flavour of Our Streets</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -64,22 +51,406 @@ the theme. Use a multi-column layout to organize your data attractively -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link browseNav" href="index.html">homepage</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active browseNav"
-                aria-current="infopage"
-                href="info.html"
-                >info page</a
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Homepage</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link browseNav" href="form.html">form page</a>
+              <a class="nav-link active" href="info.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="form.html">Join Us</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <header>
+      <div class="container-fluid hero-container">
+        <h1>discover the legacy of hawker culture</h1>
+        <p>insights, heritage, and future developments</p>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <h2>Preserving Tradition</h2>
+              <div class="images">
+                <img
+                  src="images/preserving-tradition.png"
+                  alt="Elderly hawker cooking noodles at a traditional stall"
+                />
+              </div>
+              <p>
+                Singapore’s hawker culture has long been at the heart of daily
+                life, offering more than just affordable meals, it reflects the
+                country’s multicultural roots. In recognition of its cultural
+                value, hawker culture was inscribed on the UNESCO Representative
+                List of the Intangible Cultural Heritage of Humanity in 2020.
+                This honour underscores the importance of safeguarding
+                traditional food practices passed down through generations.
+              </p>
+              <p>
+                Many hawkers are elderly individuals who have spent decades
+                perfecting recipes rooted in family or regional traditions. As
+                they retire, there is growing concern about the loss of culinary
+                knowledge and heritage. To address this, the government and
+                community initiatives are working to document recipes, oral
+                histories, and cooking techniques.
+              </p>
+              <p>
+                Hawker centres also continue to play a vital role as communal
+                spaces where people of different backgrounds come together,
+                fostering social interaction and a shared sense of identity over
+                a simple, hearty meal.
+              </p>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <h2>Modernisation & Innovation</h2>
+              <div class="images">
+                <img
+                  src="images/modernisation-innovation.png"
+                  alt="Young hawker using a mobile device at a modern stall"
+                />
+              </div>
+              <p>
+                While tradition remains important, hawker culture is also
+                evolving with the times. A new generation of young hawkers,
+                often referred to as hawkerpreneurs, is bringing fresh energy
+                and creativity into the scene. These individuals may be
+                professionally trained chefs, former office workers, or
+                passionate food lovers who are reviving traditional dishes with
+                modern twists or introducing entirely new flavours. Many of them
+                actively market their food on Instagram and TikTok, leveraging
+                digital platforms to build loyal followings.
+              </p>
+              <p>
+                Hawker centres themselves are also embracing technology, with
+                more stalls accepting cashless payments and partnering with food
+                delivery platforms to reach a wider audience. These changes have
+                helped keep hawker culture relevant, especially among younger
+                consumers who value convenience and digital accessibility.
+              </p>
+              <p>
+                Even as innovation takes place, there's a conscious effort to
+                maintain the spirit of hawker food—affordable, accessible, and
+                rooted in Singapore’s identity.
+              </p>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <h2>Future & Sustainability</h2>
+              <div class="images">
+                <img
+                  src="images/future-sustainability.png"
+                  alt="Reusable packaging and plant-based dishes at a hawker centre"
+                />
+              </div>
+              <p>
+                Looking ahead, the future of hawker culture lies in finding a
+                balance between sustainability, innovation, and heritage
+                preservation. With increasing awareness of environmental issues,
+                many hawkers are shifting toward more sustainable practices—such
+                as using biodegradable packaging, reducing food waste, and
+                offering plant-based meal options.
+              </p>
+              <p>
+                Supportive government programs, like the NEA’s Incubation Stall
+                Programme, aim to ensure that aspiring hawkers have the
+                resources and guidance needed to succeed, keeping the trade
+                alive. At the same time, public events such as the Singapore
+                Food Festival, hawker exhibitions, and community-led workshops
+                continue to celebrate and promote hawker food as a cultural
+                treasure.
+              </p>
+              <p>
+                As hawker culture adapts to the changing times, its survival
+                depends not just on nostalgic appreciation but on practical
+                efforts to sustain it by making it attractive to the next
+                generation, environmentally responsible, and globally
+                recognised, while keeping its heart and soul intact.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="hero-container mb-4">
+            <h2>Hawker Stories</h2>
+            <p style="text-align: center">
+              Shared memories from people who love hawker culture
+            </p>
+            <input
+              type="search"
+              id="search"
+              class="form-control mx-auto mb-4"
+              placeholder="Search by place, dish or story..."
+              style="max-width: 640px"
+            />
+          </div>
+          <div id="storyContainer" class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- card 1 -->
+            <div class="col">
+              <div class="card h-100 card-gallery custom-card">
+                <div class="card-body d-flex flex-column custom-card-body">
+                  <h5 class="card-title">Morning Fuel</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    Hainanese Chicken Rice, Maxwell Food Centre (Tian Tian)
+                  </h6>
+                  <p class="card-text">
+                    Every Sunday, my dad and I would swing by Maxwell for Tian
+                    Tian's chicken rice before football training. We’d share
+                    quiet bites amidst the weekday crowd, and he always praised
+                    the chili that just hit the right sweet-heat. It's a taste
+                    that still reminds me of his smile.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="col">
+              <div class="card h-100 card-gallery custom-card">
+                <div class="card-body d-flex flex-column custom-card-body">
+                  <h5 class="card-title">After-School Ritual</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    Char Kway Teow, Old Airport Road Food Centre
+                  </h6>
+                  <p class="card-text">
+                    After school, my friends and I would head straight to Old
+                    Airport Road for our $3 plates of Char Kway Teow. Greasy
+                    fingers, shared laughs, and the clatter of chopsticks —
+                    those afternoons tasted like freedom.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="col">
+              <div class="card h-100 card-gallery custom-card">
+                <div class="card-body d-flex flex-column custom-card-body">
+                  <h5 class="card-title">Rainy Day Comfort</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    Laksa, Queensway Shopping Centre
+                  </h6>
+                  <p class="card-text">
+                    Whenever it rained, Mum would take me to the laksa stall in
+                    Queensway. The steam would fog up my glasses, and the spicy
+                    broth warmed more than just my stomach.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 4 -->
+            <div class="col">
+              <div class="card h-100 card-gallery custom-card">
+                <div class="card-body d-flex flex-column custom-card-body">
+                  <h5 class="card-title">Late-Night Bite</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    Satay, Lau Pa Sat
+                  </h6>
+                  <p class="card-text">
+                    After long nights at work, my colleagues and I would head to
+                    Lau Pa Sat for satay. Smoke in the air, peanut sauce on our
+                    fingers, and laughter echoing in the night, it was our kind
+                    of happy hour.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 5 -->
+            <div class="col">
+              <div class="card h-100 card-gallery custom-card">
+                <div class="card-body d-flex flex-column custom-card-body">
+                  <h5 class="card-title">Study Breaks</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    Roti Prata, The Roti Prata House
+                  </h6>
+                  <p class="card-text">
+                    In university, my friends and I lived on teh tarik and
+                    crispy prata during exam season. We'd brainstorm answers
+                    over curry and promise to meet again after the chaos.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 6 -->
+            <div class="col">
+              <div class="card h-100 card-gallery custom-card">
+                <div class="card-body d-flex flex-column custom-card-body">
+                  <h5 class="card-title">First Date</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    Hokkien Mee, Geylang Lor 29
+                  </h6>
+                  <p class="card-text">
+                    My partner and I shared a plate of Hokkien Mee under the
+                    stars on our first date. We still joke that it was the
+                    sambal that sealed the deal.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 7 -->
+            <div class="col">
+              <div class="card h-100 card-gallery custom-card">
+                <div class="card-body d-flex flex-column custom-card-body">
+                  <h5 class="card-title">Weekend Tradition</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    Nasi Lemak, Changi Village
+                  </h6>
+                  <p class="card-text">
+                    Every Saturday, we’d cycle to Changi Village for nasi lemak.
+                    The coconut rice, crispy chicken, and sea breeze made the
+                    10km ride worth it.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 8 -->
+            <div class="col">
+              <div class="card h-100 card-gallery custom-card">
+                <div class="card-body d-flex flex-column custom-card-body">
+                  <h5 class="card-title">Grandma’s Favourite</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    Mee Rebus, Tekka Centre
+                  </h6>
+                  <p class="card-text">
+                    Grandma loved the mee rebus at Tekka. Every visit felt like
+                    a celebration, with her insisting we finish the gravy down
+                    to the last drop.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 9 -->
+            <div class="col">
+              <div class="card h-100 card-gallery custom-card">
+                <div class="card-body d-flex flex-column custom-card-body">
+                  <h5 class="card-title">Birthday Breakfast</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    Kaya Toast, Ya Kun Kaya Toast
+                  </h6>
+                  <p class="card-text">
+                    For my birthday every year, Dad would take me for kaya toast
+                    and soft-boiled eggs before school. Simple, but perfect.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 10 -->
+            <div class="col">
+              <div class="card h-100 card-gallery custom-card">
+                <div class="card-body d-flex flex-column custom-card-body">
+                  <h5 class="card-title">Lunch with Colleagues</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    Fish Soup, Amoy Street Food Centre
+                  </h6>
+                  <p class="card-text">
+                    Workdays were made better by a quick fish soup run with my
+                    colleagues. The fresh broth always felt like a mid-day
+                    reset.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 11 -->
+            <div class="col">
+              <div class="card h-100 card-gallery custom-card">
+                <div class="card-body d-flex flex-column custom-card-body">
+                  <h5 class="card-title">Festive Feels</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    Popiah, East Coast Lagoon Food Village
+                  </h6>
+                  <p class="card-text">
+                    During Chinese New Year, we’d gather at East Coast Lagoon
+                    for popiah. Rolling them ourselves made it even more
+                    special.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 12 -->
+            <div class="col">
+              <div class="card h-100 card-gallery custom-card">
+                <div class="card-body d-flex flex-column custom-card-body">
+                  <h5 class="card-title">Comfort Food</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    Bak Chor Mee, Bedok 85
+                  </h6>
+                  <p class="card-text">
+                    Whenever I felt down, a bowl of bak chor mee from Bedok 85
+                    was my cure. The vinegar tang never failed to lift my mood.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 13 -->
+            <div class="col">
+              <div class="card h-100 card-gallery custom-card">
+                <div class="card-body d-flex flex-column custom-card-body">
+                  <h5 class="card-title">Family Bonding</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    Oyster Omelette, Newton Food Centre
+                  </h6>
+                  <p class="card-text">
+                    Every family outing ended with oyster omelette at Newton.
+                    We’d argue over who got the crispiest bits.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 14 -->
+            <div class="col">
+              <div class="card h-100 card-gallery custom-card">
+                <div class="card-body d-flex flex-column custom-card-body">
+                  <h5 class="card-title">Exam Season</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    Wanton Mee, Tiong Bahru Market
+                  </h6>
+                  <p class="card-text">
+                    My study group swore by the wanton mee at Tiong Bahru. It
+                    was our reward for surviving another paper.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 15 -->
+            <div class="col">
+              <div class="card h-100 card-gallery custom-card">
+                <div class="card-body d-flex flex-column custom-card-body">
+                  <h5 class="card-title">Midnight Cravings</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    BBQ Stingray, Chomp Chomp
+                  </h6>
+                  <p class="card-text">
+                    On sleepless nights, we’d head to Chomp Chomp for BBQ
+                    stingray. The sambal, lime, and smoky char made it worth
+                    losing sleep over.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Elva Ko 2025</p>
+    </footer>
   </body>
 </html>

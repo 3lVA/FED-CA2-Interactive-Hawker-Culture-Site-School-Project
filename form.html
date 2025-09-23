@@ -3,31 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Interactive Form Page</title>
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- css external stylesheet -->
+    <title>Join the cause</title>
+    <!-- external css -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Method One-->
-    <!--Bootstrap CSS-->
-    <link
-      rel="stylesheet"
-      href="bootstrap-5.3.7-dist (1)/bootstrap-5.3.7-dist/css/bootstrap.min.css"
-    />
-    <script src="bootstrap-5.3.7-dist (1)/bootstrap-5.3.7-dist/js/bootstrap.min.js"></script>
-
-    <!--Method Two-->
+    <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -39,18 +18,25 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-
     <!-- JQuery to support Bootstrap Functions -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <!-- external js -->
+    <script type="text/javascript" src="js/script.js"></script>
   </head>
-  <body class="background">
-    <!-- Include a form for visitors to share their opinions, pledge support, or
-    submit a related message (no backend processing required). Implement at
-    least 5 different form controls styled using Bootstrap -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid navStyle">
-        <a class="navbar-brand displayText websiteName">flavours of our streets</a>
+  <body class="bg-color">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-bar">
+      <div class="container-fluid">
+        <a class="navbar-brand"
+          ><img
+            src="images/website-logo.png"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Flavour of Our Streets</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -65,22 +51,289 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link browseNav" href="index.html">homepage</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link browseNav" href="info.html">info page</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active browseNav"
-                aria-current="form page"
-                href="form.html"
-                >form page</a
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Homepage</a
               >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="info.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="form.html">Join Us</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <header>
+      <div class="container-fluid hero-container">
+        <h1>join the movement</h1>
+        <p>support and share your love for hawker culture</p>
+      </div>
+    </header>
+    <main>
+      <form id="contributeForm" novalidate>
+        <div class="mb-3">
+          <label for="name" class="form-label">name</label>
+          <input type="text" class="form-control" id="name" required />
+          <div id="nameErr" class="error-message">Please enter your name</div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">email address</label>
+          <input type="email" class="form-control" id="email" required />
+          <div id="emailErr" class="error-message">
+            Please enter a valid email address
+          </div>
+        </div>
+        <!-- bootstrap select -->
+        <div class="mb-3">
+          <!-- src=https://danielfooddiary.com/2021/08/09/besthawkerfood/ -->
+          <label class="form-label">favourite hawker food</label>
+          <select class="form-select" id="food" required>
+            <option value="">Select an option</option>
+            <option value="Ayam Penyet">Ayam Penyet</option>
+            <option value="Bak Chor Mee">Bak Chor Mee</option>
+            <option value="Bak Kut Teh">Bak Kut Teh</option>
+            <option value="Ban Mian">Ban Mian</option>
+            <option value="BBQ Seafood">BBQ Seafood</option>
+            <option value="Beef Noodles">Beef Noodles</option>
+            <option value="Bee Hoon (Economic)">Bee Hoon (Economic)</option>
+            <option value="Char Kway Teow">Char Kway Teow</option>
+            <option value="Char Siew Rice">Char Siew Rice</option>
+            <option value="Chendol">Chendol</option>
+            <option value="Cheng Tng">Cheng Tng</option>
+            <option value="Chwee Kueh">Chwee Kueh</option>
+            <option value="Chicken Rice">Chicken Rice</option>
+            <option value="Claypot Rice">Claypot Rice</option>
+            <option value="Congee">Congee</option>
+            <option value="Curry Chicken Noodles">Curry Chicken Noodles</option>
+            <option value="Curry Puff">Curry Puff</option>
+            <option value="Duck Rice & Noodles">Duck Rice & Noodles</option>
+            <option value="Double Boiled Soups">Double Boiled Soups</option>
+            <option value="Fish Soup">Fish Soup</option>
+            <option value="Fishball Noodles">Fishball Noodles</option>
+            <option value="Fried Carrot Cake">Fried Carrot Cake</option>
+            <option value="Fried Oyster Omelette">Fried Oyster Omelette</option>
+            <option value="Hokkien Mee">Hokkien Mee</option>
+            <option value="Hor Fun">Hor Fun</option>
+            <option value="Kopi & Kaya Toast">Kopi & Kaya Toast</option>
+            <option value="Kway Chap">Kway Chap</option>
+            <option value="Laksa">Laksa</option>
+            <option value="Lor Mee">Lor Mee</option>
+            <option value="Lontong">Lontong</option>
+            <option value="Mee Rebus">Mee Rebus</option>
+            <option value="Mee Siam">Mee Siam</option>
+            <option value="Mee Soto">Mee Soto</option>
+            <option value="Mutton Soup">Mutton Soup</option>
+            <option value="Nasi Biryani">Nasi Biryani</option>
+            <option value="Nasi Lemak">Nasi Lemak</option>
+            <option value="Nasi Padang">Nasi Padang</option>
+            <option value="Ngor Hiang">Ngor Hiang</option>
+            <option value="Pig’s Organ Soup">Pig’s Organ Soup</option>
+            <option value="Popiah">Popiah</option>
+            <option value="Prawn Noodles">Prawn Noodles</option>
+            <option value="Rojak">Rojak</option>
+            <option value="Roti Prata">Roti Prata</option>
+            <option value="Satay">Satay</option>
+            <option value="Soya Sauce Chicken">Soya Sauce Chicken</option>
+            <option value="Tau Hway">Tau Hway</option>
+            <option value="Teochew Porridge">Teochew Porridge</option>
+            <option value="Thunder Tea Rice">Thunder Tea Rice</option>
+            <option value="Vadai">Vadai</option>
+            <option value="Vegetarian Bee Hoon">Vegetarian Bee Hoon</option>
+            <option value="Wanton Mee">Wanton Mee</option>
+            <option value="Western Food">Western Food</option>
+            <option value="Yong Tau Foo">Yong Tau Foo</option>
+            <option value="Zi Char">Zi Char</option>
+          </select>
+          <div class="error-message" id="foodErr">Please select one option</div>
+        </div>
+        <div class="mb-3">
+          <!-- src=chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.nea.gov.sg/docs/default-source/hawker-centres-documents/list-of-hcs_19-jun-2024.pdf -->
+          <label class="form-label">favourite hawker centre</label>
+          <select class="form-select" id="centre" required>
+            <option value="">Select an option</option>
+            <option value="ABC Brickworks Market & Food Centre">
+              ABC Brickworks Market & Food Centre
+            </option>
+            <option value="Adam Food Centre">Adam Food Centre</option>
+            <option value="Albert Centre Market & Food Centre">
+              Albert Centre Market & Food Centre
+            </option>
+            <option value="Alexandra Village Food Centre">
+              Alexandra Village Food Centre
+            </option>
+            <option value="Amoy Street Food Centre">
+              Amoy Street Food Centre
+            </option>
+            <option value="Anchorvale Village Hawker Centre">
+              Anchorvale Village Hawker Centre
+            </option>
+            <option value="Bedok Food Centre">Bedok Food Centre</option>
+            <option value="Beo Crescent Market">Beo Crescent Market</option>
+            <option value="Berseh Food Centre">Berseh Food Centre</option>
+            <option value="Buangkok Hawker Centre">
+              Buangkok Hawker Centre
+            </option>
+            <option value="Bukit Canberra Hawker Centre">
+              Bukit Canberra Hawker Centre
+            </option>
+            <option value="Bukit Timah Market">Bukit Timah Market</option>
+            <option value="Chinatown Complex Market & Hawker Centre">
+              Chinatown Complex Market & Hawker Centre
+            </option>
+            <option value="Chomp Chomp Food Centre">
+              Chomp Chomp Food Centre
+            </option>
+            <option value="Chong Pang Market & Food Centre">
+              Chong Pang Market & Food Centre
+            </option>
+            <option value="Ci Yuan Hawker Centre">Ci Yuan Hawker Centre</option>
+            <option value="Commonwealth Crescent Market">
+              Commonwealth Crescent Market
+            </option>
+            <option value="Dunman Food Centre">Dunman Food Centre</option>
+            <option value="East Coast Lagoon Food Village">
+              East Coast Lagoon Food Village
+            </option>
+            <option value="Geylang Serai Market">Geylang Serai Market</option>
+            <option value="Golden Mile Food Centre">
+              Golden Mile Food Centre
+            </option>
+            <option value="Holland Village Market & Food Centre">
+              Holland Village Market & Food Centre
+            </option>
+            <option value="Hong Lim Market & Food Centre">
+              Hong Lim Market & Food Centre
+            </option>
+            <option value="Jurong West Hawker Centre">
+              Jurong West Hawker Centre
+            </option>
+            <option value="Kallang Estate Market">Kallang Estate Market</option>
+            <option value="Kampung Admiralty Hawker Centre">
+              Kampung Admiralty Hawker Centre
+            </option>
+            <option value="Lau Pat Sat">Lau Pat Sat</option>
+            <option value="Margaret Drive Hawker Centre">
+              Margaret Drive Hawker Centre
+            </option>
+            <option value="Marsiling Mall Hawker Centre">
+              Marsiling Mall Hawker Centre
+            </option>
+            <option value="Maxwell Food Centre">Maxwell Food Centre</option>
+            <option value="Newton Food Centre">Newton Food Centre</option>
+            <option value="North Bridge Road Market & Food Centre">
+              North Bridge Road Market & Food Centre
+            </option>
+            <option value="Old Airport Road Food Centre">
+              Old Airport Road Food Centre
+            </option>
+            <option value="One Punggol Hawker Centre">
+              One Punggol Hawker Centre
+            </option>
+            <option value="Pasir Panjang Food Centre">
+              Pasir Panjang Food Centre
+            </option>
+            <option value="Pasir Ris Central Hawker Centre">
+              Pasir Ris Central Hawker Centre
+            </option>
+            <option value="Sembawang Hills Food Centre">
+              Sembawang Hills Food Centre
+            </option>
+            <option value="Senja Hawker Centre">Senja Hawker Centre</option>
+            <option value="Serangoon Garden Market">
+              Serangoon Garden Market
+            </option>
+            <option value="Taman Jurong Market & Food Centre">
+              Taman Jurong Market & Food Centre
+            </option>
+            <option value="Tanglin Halt Market">Tanglin Halt Market</option>
+            <option value="Tiong Bahru Market">Tiong Bahru Market</option>
+            <option value="Yishun Park Hawker Centre">
+              Yishun Park Hawker Centre
+            </option>
+            <option value="Zion Riverside Food Centre">
+              Zion Riverside Food Centre
+            </option>
+          </select>
+          <div class="error-message" id="centreErr">
+            Please select one option
+          </div>
+        </div>
+        <!-- bootstrap inline radio -->
+        <div class="mb-3">
+          <label class="form-label"
+            >would you recommend hawker food to tourists?</label
+          ><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="recommendation"
+              id="yes"
+              value="yes"
+              required
+            />
+            <label class="form-check-label" for="yes">yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="recommendation"
+              id="no"
+              value="no"
+            />
+            <label class="form-check-label" for="no">no</label>
+          </div>
+        </div>
+        <label for="message" class="form-label">Your message or memory </label>
+        <div class="form-outline">
+          <textarea
+            class="form-control"
+            id="message"
+            rows="5"
+            maxlength="500"
+          ></textarea>
+          <div id="charCount" class="form-text">0/500 characters</div>
+        </div>
+        <div class="error-message" id="messageErr">
+          Please enter a message/memory
+        </div>
+        <div>
+          <label for="support" class="form-label"
+            >how much do you support this initiative? (0-100%)</label
+          >
+          <div class="row">
+            <div class="col-1">
+              <div class="col-1">0</div>
+            </div>
+            <div class="col-10">
+              <input
+                type="range"
+                class="form-range"
+                min="0"
+                max="100"
+                value="50"
+                style="width: 100%"
+                id="support"
+              />
+            </div>
+            <div class="col-1">100</div>
+          </div>
+        </div>
+        <button
+          type="submit"
+          onclick="validateForm(event);"
+          class="btn"
+          style="background-color: #b53e00; color: white"
+        >
+          Submit
+        </button>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; Elva Ko 2025</p>
+    </footer>
   </body>
 </html>

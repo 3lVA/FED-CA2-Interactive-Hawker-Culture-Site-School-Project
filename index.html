@@ -3,32 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- css external stylesheet -->
+    <title>Celebrating Hawker Culture</title>
+    <!-- external css -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Method One-->
-    <!--Bootstrap CSS-->
-    <link
-      rel="stylesheet"
-      href="bootstrap-5.3.7-dist (1)/bootstrap-5.3.7-dist/css/bootstrap.min.css"
-    />
-    <script src="bootstrap-5.3.7-dist (1)/bootstrap-5.3.7-dist/js/bootstrap.min.js"></script>
-
-    <!--Method Two-->
+    <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -40,17 +18,25 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-
     <!-- JQuery to support Bootstrap Functions -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <!-- external js -->
+    <script type="text/javascript" src="js/script.js"></script>
   </head>
-  <body class="background">
-    <!-- Introduce your chosen theme/cause in a visually engaging way. Clearly state
-    your message or objective -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid navStyle">
-        <a class="navbar-brand displayText websiteName">flavours of our streets</a>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-bar">
+      <div class="container-fluid">
+        <a class="navbar-brand"
+          ><img
+            src="images/website-logo.png"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Flavour of Our Streets</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -64,23 +50,332 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item ">
-              <a
-                class="nav-link active browseNav"
-                aria-current="homepage"
-                href="index.html"
-                >homepage</a
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Homepage</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link browseNav" href="info.html">info page</a>
+              <a class="nav-link" href="info.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link browseNav " href="form.html">form page</a>
+              <a class="nav-link" href="form.html">Join Us</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <header>
+      <div class="container-fluid hero-container">
+        <h1>celebrating singapore's hawker culture</h1>
+        <p>a tribute to our national pride, flavours, and stories</p>
+      </div>
+    </header>
+    <main>
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/east-coast-lagoon-food-village.png"
+              class="d-block w-100"
+              alt="east coast lagoon food village"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/golden-mile-food-centre.png"
+              class="d-block w-100"
+              alt="golden mile food centre"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/lau-pa-sat.png"
+              class="d-block w-100"
+              alt="lau pa sat"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/maxwell-food-centre.png"
+              class="d-block w-100"
+              alt="maxwell food centre"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/old-airport-road-food-centre.png"
+              class="d-block w-100"
+              alt="old airport road food centre"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <section class="text-center mt-5 px-4" style="margin: 20px">
+        <h2>Why Hawker Culture Matters</h2>
+
+        <h5 class="mt-4">More Than Just Food</h5>
+        <p>
+          Singapore's hawker centres are more than food: they are stories,
+          heritage, and daily life. Recognized by UNESCO, our hawkers preserve
+          recipes and build communities with every dish they serve.
+        </p>
+        <div class="container images">
+          <div class="row">
+            <div class="col">
+              <img src="images/more-than-food1.png" alt="" />
+            </div>
+            <div class="col">
+              <img src="images/more-than-food2.png" alt="" />
+            </div>
+            <div class="col">
+              <img src="images/more-than-food3.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <h5 class="mt-4">A Place to Belong</h5>
+        <p>
+          Hawker culture is a huge part of what makes Singapore, Singapore. It’s
+          not just about cheap and tasty food, it’s about shared memories,
+          stories, and the people behind the stalls. Whether it’s your favourite
+          chicken rice uncle who remembers your order, or the comforting bowl of
+          mee rebus you’ve had since you were a kid, hawker centres are places
+          where everyday moments become meaningful. They’re where families
+          gather, friends meet, and strangers share tables, no fancy
+          reservations needed.
+        </p>
+        <div class="container images">
+          <div class="row">
+            <div class="col">
+              <img src="images/place-to-belong1.png" alt="" />
+            </div>
+            <div class="col">
+              <img src="images/place-to-belong2.png" alt="" />
+            </div>
+            <div class="col">
+              <img src="images/place-to-belong3.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <h5 class="mt-4">Hawkers Behind the Stalls</h5>
+        <p>
+          Behind each dish is a hawker who wakes up early, works long hours, and
+          pours heart and heritage into every plate. Many of them are second or
+          third-generation cooks keeping family recipes alive, while others
+          bring creative new twists to tradition. Every stall tells a story of
+          culture, passion, and identity.
+        </p>
+        <div class="container images">
+          <div class="row">
+            <div class="col"><img src="images/hawkers1.png" alt="" /></div>
+            <div class="col"><img src="images/hawkers2.png" alt="" /></div>
+            <div class="col"><img src="images/hawkers3.png" alt="" /></div>
+          </div>
+        </div>
+
+        <h5 class="mt-4">Something to Protect</h5>
+        <p>
+          Recognised by UNESCO, hawker culture is something we can all be proud
+          of. It reflects Singapore’s rich mix of cultures, our kampung spirit,
+          and our love for good food. But more importantly, it's something worth
+          celebrating and protecting for future generations. So the next time
+          you dabao from your favourite stall, take a moment to appreciate what
+          hawker culture really means, it’s not just food. It’s home.
+        </p>
+        <div class="container images">
+          <div class="row">
+            <div class="col"><img src="images/protect1.png" alt="" /></div>
+            <div class="col"><img src="images/protect2.png" alt="" /></div>
+            <div class="col"><img src="images/protect3.png" alt="" /></div>
+          </div>
+        </div>
+      </section>
+      <section> <!-- flip card gallery -->
+        <div class="container">
+          <h2 class="text-center">A Brief History Of Some Hawker Dishes</h2>
+          <div class="row">
+            <!-- card 1 -->
+            <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
+              <div class="flip-card h-100">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images/chicken-rice.png"
+                      class="card-img-top img-fluid"
+                      alt="Chicken Rice"
+                    />
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="card-body">
+                      <h5 class="card-title">Chicken Rice</h5>
+                      <p class="card-text">
+                        Chicken rice originated from Hainan, China. It was
+                        brought to Singapore by immigrants and adapted to local
+                        taste. It became a
+                        hawker favourite for its simplicity and flavour.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
+              <div class="flip-card h-100">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images/prata.png"
+                      class="card-img-top img-fluid"
+                      alt="Prata"
+                    />
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="card-body">
+                      <h5 class="card-title">Roti Prata</h5>
+                      <p class="card-text">
+                        Roti prata originated from South India. It was
+                        introduced by Indian Muslim immigrants and became a
+                        popular hawker dish, often served with curry or sugar.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
+              <div class="flip-card h-100">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images/chwee-kueh.png"
+                      class="card-img-top img-fluid"
+                      alt="Chwee Kueh"
+                    />
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="card-body">
+                      <h5 class="card-title">Chwee Kueh</h5>
+                      <p class="card-text">
+                        Chwee kueh originated from Teochew, China. Teochew
+                        immigrants brought it to Singapore, where it became a
+                        common hawker breakfast with preserved radish topping.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 4 -->
+            <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
+              <div class="flip-card h-100">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images/char-kuay-teow.png"
+                      class="card-img-top img-fluid"
+                      alt="Char Kuay Teow"
+                    />
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="card-body">
+                      <h5 class="card-title">Char Kuay Teow</h5>
+                      <p class="card-text">
+                        Char kuay teow originated from Southern China. Chinese
+                        immigrants cooked it for labourers and it evolved into a
+                        beloved wok-fried noodle dish in hawker centres.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 5 -->
+            <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
+              <div class="flip-card h-100">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images/laksa.png"
+                      class="card-img-top img-fluid"
+                      alt="Laksa"
+                    />
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="card-body">
+                      <h5 class="card-title">Laksa</h5>
+                      <p class="card-text">
+                        Laksa originated from the Peranakan community. A blend
+                        of Chinese and Malay flavours, it became a staple in
+                        hawker stalls, especially the famous Katong-style
+                        version.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 6 -->
+            <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
+              <div class="flip-card h-100">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images/ayam-penyet.png"
+                      class="card-img-top img-fluid"
+                      alt="Ayam Penyet"
+                    />
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="card-body">
+                      <h5 class="card-title">Ayam Penyet</h5>
+                      <p class="card-text">
+                        Ayam penyet originated from Indonesia. It was introduced
+                        by Malay and Indonesian hawkers and gained popularity in
+                        hawker centres for its smashed fried chicken and spicy
+                        sambal.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Elva Ko 2025</p>
+    </footer>
   </body>
 </html>
