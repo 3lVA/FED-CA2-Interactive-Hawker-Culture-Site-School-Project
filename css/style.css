@@ -1,28 +1,126 @@
-/* body */
-.background {
-  background-color: #fff3e0;
-  margin: 0px;
-  padding: 0px;
+/* general */
+.hero-container p {
+  text-transform: capitalize;
 }
-.displayText {
-  font-family: "dm serif display";
+.hero-container {
+  padding: 50px;
+  text-align: center;
+  background-color: #b51b00;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h5 {
+  font-family: "Times New Roman", Times, serif;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+footer {
+  padding: 20px;
+}
+
+/* navBar */
+.nav-bar {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.images img{
+width:100%;
+}
+
+/* homepage */
+section p {
+  text-align: left;
+}
+
+/* homepage: flipcard */
+/* for the outline behind the card/outer wrapper */
+.flip-card {
+  background-color: transparent;
+  width:100%; /*use full width of column */
+  aspect-ratio: 1/1; /*make sure the card is square */
+  perspective: 1000px; /*give the card the 3D look when flipping */
+  margin:20px;
+}
+
+/* part that flips */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s; /*make the flip smooth*/
+  transform-style: preserve-3d; /*make sure the front and back of the cards are in position then when the card flips,they are in place & visible*/
+}
+
+/* the part that flips rotates 180 degree (basically flip from left to right) */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* make sure both sides sit on top of e/o  */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /*make sure the behind of the card won't show until its flipped*/
+}
+
+.flip-card-front img{
+  border-radius: 30px;
+  width:100%;
+  height:100%;
+}
+
+/* back of the card, alr rotated so when the card flip, it faces forward */
+.flip-card-back {
+  transform: rotateY(180deg);
+  padding: 15px;
+    border: 3px solid #b51b00;
+    border-radius: 30px;
+}
+
+/* info page */
+/* center & limit width of search bar */
+.custom-search {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 640px;
+}
+
+/* make height of cards equal */
+.custom-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* make card body content use vertical flex layout */
+.custom-card-body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* form page */
+form {
+  padding: 50px;
   text-transform: capitalize;
 }
 
-/* navigation bar */
-.navStyle {
-  background-color: rgb(145, 41, 41);
+.error-message {
+  color: red;
+  display: none;
 }
 
-.navStyle a {
-  color: #fff3e0;
-  text-transform: capitalize;
-  font-family: "playfair";
-}
 
-/* overwrite og hover */
-.browseNav:hover {
-  color: rgb(145, 41, 41);
-  background-color: #fff3e0;
-  padding:10px;
-}
