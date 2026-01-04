@@ -3,7 +3,7 @@ Interactive site about Singapore’s hawker culture for FED CA2 (HTML/CSS/JavaSc
 
 # Hawker Culture Website — FED CA2 Project
 This is an interactive website created as part of the Front-End Web Development CA2 (Continuous Assessment 2) project for my course.  
-**Grade: A**
+**Overall Module Grade: A**
 
 ## Features
 - Responsive multi-page layout using HTML5, CSS3, Bootstrap, and JavaScript  
